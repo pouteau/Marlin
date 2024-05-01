@@ -3147,7 +3147,7 @@
 //
 // Generic TFT with detailed options
 //
-#define TFT_GENERIC //LMaker
+#define TFT_GENERIC
 #if ENABLED(TFT_GENERIC)
   // :[ 'AUTO', 'ST7735', 'ST7789', 'ST7796', 'R61505', 'ILI9328', 'ILI9341', 'ILI9488' ]
   #define TFT_DRIVER AUTO
@@ -3193,7 +3193,7 @@
  *   TFT_ROTATE_270, TFT_ROTATE_270_MIRROR_X, TFT_ROTATE_270_MIRROR_Y,
  *   TFT_MIRROR_X, TFT_MIRROR_Y, TFT_NO_ROTATION
  */
-#define TFT_ROTATION TFT_ROTATE_270_MIRROR_Y //LMAKER
+#define TFT_ROTATION TFT_ROTATE_180_MIRROR_X
 
 //=============================================================================
 //============================  Other Controllers  ============================
@@ -3221,11 +3221,11 @@
 
   #define TOUCH_SCREEN_CALIBRATION
 
-  #define TOUCH_CALIBRATION_X -8699 	//LMaker
-  #define TOUCH_CALIBRATION_Y -11799 	//LMaker
-  #define TOUCH_OFFSET_X        256		//LMaker
-  #define TOUCH_OFFSET_Y        355		//LMaker
-  #define TOUCH_ORIENTATION TOUCH_PORTRAIT//LMaker
+  #define TOUCH_CALIBRATION_X 11598
+  #define TOUCH_CALIBRATION_Y -8641
+  #define TOUCH_OFFSET_X        -27
+  #define TOUCH_OFFSET_Y        256
+  #define TOUCH_ORIENTATION TOUCH_LANDSCAPE
 
   #if BOTH(TOUCH_SCREEN_CALIBRATION, EEPROM_SETTINGS)
     #define TOUCH_CALIBRATION_AUTO_SAVE // Auto save successful calibration values to EEPROM
